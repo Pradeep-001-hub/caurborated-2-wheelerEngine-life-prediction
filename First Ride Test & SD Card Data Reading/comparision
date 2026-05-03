@@ -1,0 +1,19 @@
+Do this:
+Ride each bike for
+same 15-20 minutes
+
+Collect data.csv
+from each bike
+Rename them:
+→ bike1_5000km.csv
+→ bike2_30000km.csv
+→ bike3_60000km.csv
+
+Open all 3 in Excel
+Plot λ average for each
+
+Expected result:
+Bike 1 (new)    → λ near 1.0, stable
+Bike 2 (medium) → λ slightly shifted
+Bike 3 (worn)   → λ clearly drifted,
+                   more variance
