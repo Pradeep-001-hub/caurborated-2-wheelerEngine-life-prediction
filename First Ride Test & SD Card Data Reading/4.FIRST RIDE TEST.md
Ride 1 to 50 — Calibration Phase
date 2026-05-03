@@ -1,0 +1,17 @@
+```text
+Just ride normally
+Device is silently
+building your baseline
+
+OLED shows:
+┌────────────────────┐
+│Lambda:  1.024      │
+│Status:  CALIBRATING│
+│Health:  100 / 100  │
+│Degr:    0%         │
+│Life: ~60000km      │
+└────────────────────┘
+
+Green + Yellow
+LEDs ON together
+= calibrating mode
