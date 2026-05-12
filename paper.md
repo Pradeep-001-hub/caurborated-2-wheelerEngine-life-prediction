@@ -82,6 +82,25 @@ oxygen sensor.
 ### Hardware Design
 Parametric 3D enclosure designed in OpenSCAD for ease of manufacturing 
 and customization.
+---
+## MATLAB Validation & Synthetic Testing
+
+The engine health prediction algorithm was validated using synthetic 
+engine degradation scenarios representing real-world conditions:
+
+1. **Healthy Baseline (500 hours):** Stable lambda, optimal combustion
+2. **Normal to Accelerated Wear (2000 hours):** Progressive degradation
+3. **Critical Degradation (3000 hours):** Long-term failure trajectory
+4. **Rich Mixture Fault (1500 hours):** Diagnostic anomaly detection
+
+The algorithm detects:
+- Lambda (λ) drift and instability
+- Emission violations (CO, HC, NOx vs Euro 6 limits)
+- Combustion efficiency decline
+- Health index degradation rate (dHealth/dt)
+- Remaining useful life (RUL) prediction
+
+See `Simulation of sensor/` folder for MATLAB scripts and generated results.
 
 ## Future Work
 
