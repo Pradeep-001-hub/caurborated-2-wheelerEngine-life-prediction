@@ -1,7 +1,4 @@
 %% ================= ENGINE HEALTH INDEX SIMULATION =================
-% Author: Your Project Model
-% Purpose: Simulate AFR-based engine health prediction system
-
 clear all; close all; clc;
 
 %% ================= TIME SETUP =================
