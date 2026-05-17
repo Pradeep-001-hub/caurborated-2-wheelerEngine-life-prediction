@@ -1,11 +1,4 @@
 
-The 6 Phases
-Parts & Procurement
-Probe Tube Fabrication
-Electronics Assembly
-Wiring
-Firmware
-First Run & Calibration
 ------
 PHASE 1 — Parts & Procurement
 A. Sensor & Driver
