@@ -1,5 +1,5 @@
 ---
-title:Engine Health Prediction Device for Carbureted Two-Wheelers
+title: Engine Health Prediction
 tags:
   - cj125 chip
   - esp32 microcontroller
@@ -7,17 +7,18 @@ tags:
   - engine-diagnostics
   - lambda-sensor
   - temperature sensor
-  - LCD 
-author:
-  - name: koramutla pradeep
+  - LCD
+authors:
+  - name: Koramutla Pradeep
     orcid: 0009-0001-4852-0481
-   affiliation:1
+    affiliation: 1
 affiliations:
-  - name: independent researcher
-  - index:1
+  - name: Independent Researcher
+    index: 1
 date: 18 June 2026
 bibliography: paper.bib
 ---
+
 
 ## device portable and retrofit-compatible.
 ----
