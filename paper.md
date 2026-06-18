@@ -1,8 +1,52 @@
-# Engine Health Prediction Device for Carbureted Two-Wheelers
+---
+title: 'Engine Health Prediction Device for Carbureted Two-Wheelers'
+tags:
+  - cj125 chip
+  - esp32 microcontroller
+  - embedded-systems
+  - engine-diagnostics
+  - lambda-sensor
+  - temperature sensor
+  - LCD 
+author:
+  - name: koramutla pradeep
+    orcid: 0009-0001-4852-0481
+affiliations:
+  - name: independent researcher
+  - index:1
+date: 18 June 2026
+bibliography: paper.bib
+---
 
-## Summary
+## device portable and retrofit-compatible.
+----
 
-Modern vehicles benefit from sophisticated on-board diagnostic systems that monitor engine health in real-time. However, carbureted two-wheelers—which comprise millions of vehicles globally in developing regions—lack such monitoring capabilities. This paper presents a compact, portable, retrofit engine health prediction device that analyzes exhaust gas composition using a wideband lambda sensor to detect engine degradation, knocking events, and combustion quality without requiring OBD-II access or engine RPM data.
+## Key Features
+
+- No OBD dependency
+- Standalone battery-backed operation
+- Compact & portable (3D-printed enclosure)
+- Low cost (approximately $65 USD)
+- Historical data logging on SD card
+- Adaptive self-calibration
+---
+
+## Validation
+The MATLAB-based algorithm was validated using synthetic degradation scenarios (healthy baseline, progressive wear, critical degradation, and rich mixture faults).
+----
+
+## Repository Contents
+
+- `firmware/`: Arduino sketches for ESP32
+- `hardware/`: CAD models, schematics, and BOM
+- `docs/`: Installation, calibration, and usage guides
+- `validation/`: Test data and MATLAB scripts
+  -
+
+## introduction:
+
+Modern vehicles benefit from sophisticated on-board diagnostic systems that monitor engine health in real-time. However, carbureted two-wheelers—which comprise millions of vehicles globally in developing regions—lack such monitoring capabilities. This paper presents a compact, portable, retrofit engine health prediction device that analyzes exhaust gas composition using a wideband lambda sensor to detect engine degradation, knocking events, and combustion quality without requiring OBD-II access or engine RPM data
+-----
 
 ## Statement of Need
 
@@ -14,6 +58,7 @@ Engine knock, valve wear, spark plug degradation, and fuel delivery problems man
 - **Fuel Efficiency Optimization:** Real-time feedback on combustion quality
 - **Emission Monitoring:** Track exhaust gas parameters for regulatory compliance
 - **Owner Empowerment:** Mechanics and enthusiasts gain visibility into engine state
+-----
 
 ## Implementation
 
@@ -29,6 +74,7 @@ The device consists of three core components:
 - Real-time OLED visualization of health metrics
 
 **Control Algorithm:** The system establishes a baseline health profile during initial operation, then monitors deviation from baseline as an indicator of engine degradation. Knock detection is inferred from rapid transients in exhaust composition. Health scores integrate multiple parameters: combustion consistency (lambda variance), knock event frequency, and deviation from established baseline.
+-------
 
 ## Key Features
 
@@ -57,7 +103,6 @@ Initial prototype validation on test vehicles demonstrates feasible sensor integ
 - **docs/:** Installation, calibration, and usage guides
 - **validation/:** Sample logs and test data from prototype vehicles
 ----
-## Implementation & Validation
 
 ### MATLAB Algorithm
 The core engine health prediction algorithm was developed and validated 
@@ -108,6 +153,7 @@ See `Simulation of sensor/` folder for MATLAB scripts and generated results.
 - `generate_synthetic_engine_data.m`: Generates 4 realistic degradation scenarios
 - `analyse_engine_health.m`: Core health index calculation & validation
 - `plot_dashboard.m`: Real-time monitoring dashboard
+  -
 
 ### Scenarios Validated
 1. Healthy baseline (500 hours) — stable operation
@@ -120,13 +166,16 @@ Arduino-compatible code porting validated algorithm to embedded platform.
 
 ### Hardware Layer (OpenSCAD)
 Parametric 3D-printable enclosure for field deployment.
+---
 
 ### Reproducibility
 All MATLAB scripts, firmware, and CAD designs are in the public repository.
 Complete synthetic datasets and generated dashboards included.
+-----
 ## Future Work
 
 Planned extensions include Bluetooth connectivity for smartphone visualization, ML-based knock detection algorithms, and expanded sensor fusion (temperature, pressure) for enhanced diagnostics.
+----
 
 ## Acknowledgments
 
